@@ -72,9 +72,21 @@ public function recommendAction()
 {
     $client = $this->get('endroid.prediction_io');
 
-    ...
+    // populate
+    $client->createUser($userId);
+    $client->createItem($itemId);
+    $client->recordAction($userId, $itemId, 'view');
+
+    // get recommendations and similar items
+    $recommendations = $client->getRecommendations($userId, $engine, $count);
+    $similarItems = $client->getSimilarItems($itemId, $engine, $count);
 }
 ```
+
+## Vagrant box
+
+PredictionIO provides a [`Vagrant box`](http://docs.prediction.io/current/installation/install-predictionio-with-virtualbox-vagrant.html)
+containing an out-of-the-box PredictionIO server.
 
 ## License
 
