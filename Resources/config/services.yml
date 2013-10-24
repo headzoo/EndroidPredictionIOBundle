@@ -1,5 +1,5 @@
 services:
     endroid.prediction_io:
         class: Endroid\PredictionIO\PredictionIO
-        arguments: [ %endroid.prediction_io.api_key%, %endroid.prediction_io.api_url% ]
+        arguments: [ %endroid.prediction_io.app_key%, %endroid.prediction_io.api_url% ]
         lazy: true

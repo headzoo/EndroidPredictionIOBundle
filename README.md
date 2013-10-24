@@ -59,7 +59,8 @@ public function registerBundles()
 
 ```yaml
 endroid_prediction_io:
-    api_key: "Your API Key"
+    app_key: "Your app key"
+    api_url: "http://localhost:8000" // optional
 ```
 
 ## Usage
