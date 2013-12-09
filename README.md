@@ -7,7 +7,14 @@ Endroid PredictionIO Bundle
 [![Latest Stable Version](https://poser.pugx.org/endroid/prediction-io-bundle/v/stable.png)](https://packagist.org/packages/endroid/prediction-io-bundle)
 [![Total Downloads](https://poser.pugx.org/endroid/prediction-io-bundle/downloads.png)](https://packagist.org/packages/endroid/prediction-io-bundle)
 
-...
+This bundle provides easy integration with [`PredictionIO`](http://prediction.io/). PredictionIO is an open source machine
+learning server for software developers to create predictive features, such as personalization, recommendation and content
+discovery. Based on [`Apache Mahout`](http://mahout.apache.org/) scalable machine learning libraries.
+
+The bundle registers the Endroid [`PredictionIO`](https://github.com/endroid/PredictionIO) client as a service in your
+Symfony project. This client can then be used to register actions between users and items and to retrieve recommendations
+provided by any PredictionIO server. Applications range from showing recommended products in a web shop to discovering
+relevant experts in a social collaboration network.
 
 [![knpbundles.com](http://knpbundles.com/endroid/EndroidPredictionIOBundle/badge-short)](http://knpbundles.com/endroid/EndroidPredictionIOBundle)
 
@@ -15,7 +22,7 @@ Endroid PredictionIO Bundle
 
 * Symfony
 * Dependencies:
- * [`PredictionIO-PHP-SDK`](https://github.com/PredictionIO/PredictionIO-PHP-SDK)
+ * [`endroid/PredictionIO`](https://github.com/endroid/PredictionIO)
 
 ## Installation
 
